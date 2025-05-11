@@ -1,0 +1,430 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="referrer" content="no-referrer"/>
+    <title>左清清音乐</title>
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Rockfest - Music Festival Event, DJ Concert and Night Club Website Template" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <!-- CSS Files
+    ================================================== -->
+    <link id="bootstrap" href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link id="bootstrap-grid" href="static/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+    <link id="bootstrap-reboot" href="static/css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/animate.css" rel="stylesheet" type="text/css">
+    <link href="static/css/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="static/css/owl.theme.css" rel="stylesheet" type="text/css">
+    <link href="static/css/owl.transitions.css" rel="stylesheet" type="text/css">
+    <link href="static/css/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="static/css/jquery.countdown.css" rel="stylesheet" type="text/css">
+    <link id="mdb" href="static/css/mdb.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/style.css" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="static/css/scheme-01.css" rel="stylesheet" type="text/css">
+    <link href="static/css/coloring.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../static/image/bitbug_favicon%20(1).ico" />
+</head>
+
+<body class="dark-scheme">
+    <div id="wrapper">
+        <div id="preloader">
+            <div class="preloader1"></div>
+        </div>
+        <!-- header begin -->
+{#
+
+ #}
+        <header class="transparent" style="position: relative; height: 80px;position: fixed">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col" >
+                                <div class="de-flex-col" style="position: absolute;top: 20px ;left: 40px;width: 300px;">
+                                    <!-- logo begin -->
+                                    <div id="logo" >
+                                        <a href="" >
+                                            <img alt="" src="static/picture/logo.png" style="float: left;">
+                                            <p style="color: red;float: left;line-height: 50px;margin-left: 15px;font-size: 26px">左清清音乐分析系统</p>
+                                        </a>
+                                    </div>
+                                    <!-- logo close -->
+                                </div>
+                                <div class="de-flex-col">
+                                </div>
+                            </div>
+                            <div class="de-flex-col header-col-mid" style="position: absolute;left: 400px">
+                                <!-- mainmenu begin -->
+                                <ul id="mainmenu">
+                                    <li><a href="/home" >首页</a></li>
+                                    <li><a href="#" >歌单类型分析</a>
+                                        <ul>
+                                            <li><a href="/gendnxt">歌单类型图</a></li>
+                                            <li><a href="/gedanlxphb">歌单播放量排行榜</a></li>
+                                            <li><a href="/gedanscphb">歌单收藏排行榜</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" style="color: #fd0202">英文歌专辑分析</a>
+                                        <ul>
+                                            <li><a href="/genianfbywzjsl">各年发布英文专辑数量</a></li>
+                                            <li><a href="/zhuanjixlnxpfb">专辑销量类型评分榜</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">歌名歌手分析</a>
+                                        <ul>
+                                            <li><a href="/gemingcyt">歌名词云图</a></li>
+                                            <li><a href="/geshouciyt">歌手前三十发歌量</a></li>
+                                        </ul>
+                                    </li>
+                                     <li><a href="/gequshichang" >歌曲时长分析</a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="de-flex-col" style="position: absolute;left: 1200px;top: 28px">
+                                <div class="menu_side_area">
+                                    <a href="#section-tickets" class="btn-main"  style="border-radius: 10px;><i class="fa fa-sign-in"></i><span>{{ username }}</span></a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+            <section id="section-date" style="background-color: #311818">
+                <div class="container">
+                    <div class="row g-custom-x align-items-center">
+                        <div class="col-lg-12">
+                            <div class="text-center" style="background-color: #a48d8d">
+                                <h2 class="wow fadeInUp threeD" data-wow-delay="0s">专辑销量前十类型评分榜</h2>
+                                <div class="zhanshi" style="height: 600px;background-color: #FFFFFF" id="chart-panel" ></div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/wow.min.js"></script>
+    <script src="static/js/jquery.isotope.min.js"></script>
+    <script src="static/js/easing.js"></script>
+    <script src="static/js/owl.carousel.js"></script>
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    <script src="static/js/enquire.min.js"></script>
+    <script src="static/js/jquery.plugin.js"></script>
+    <script src="static/js/jquery.countTo.js"></script>
+    <script src="static/js/jquery.countdown.js"></script>
+    <script src="static/js/jquery.lazy.min.js"></script>
+    <script src="static/js/jquery.lazy.plugins.min.js"></script>
+    <script src="static/js/mdb.min.js"></script>
+    <script src="static/js/jquery.countdown.js"></script>
+    <script src="static/js/countdown-custom.js"></script>
+    <script src="static/js/cookit.js"></script>
+    <script src="static/js/designesia.js"></script>
+    <script src="static/js/echarts/echarts.js"></script>
+    <!-- COOKIES PLUGIN  -->
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('chart-panel'));
+ option = {
+    backgroundColor: "#02234c",
+    color: ["#27d391", "#eddb76", "#fe3838", "#27d391"],
+    legend: {
+        top: 10,
+        left: 'center',
+        textStyle: {
+            color: '#97b8d8'
+        },
+        data: ['优', '良', '差', '无']
+    },
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross'
+        }
+    },
+    xAxis: [{
+        gridIndex: 0,
+        axisLabel: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            lineStyle: {
+                color: 'rgba(151,184,216,0.5)',
+                type: "dashed"
+            }
+        },
+        type: 'category',
+        boundaryGap: false,
+        data: {{ leixin | tojson }}
+    }, {
+        gridIndex: 1,
+        axisLabel: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            lineStyle: {
+                color: 'rgba(151,184,216,0.5)',
+                type: "dashed"
+            }
+        },
+        type: 'category',
+        boundaryGap: false,
+        data: {{ leixin | tojson }}
+    }, {
+        gridIndex: 2,
+        axisLabel: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            lineStyle: {
+                color: 'rgba(151,184,216,0.5)',
+                type: "dashed"
+            }
+        },
+        type: 'category',
+        boundaryGap: false,
+        data: {{ leixin | tojson }}
+    }, {
+        gridIndex: 3,
+        axisLine: {
+            lineStyle: {
+                color: '#97b8d8'
+            }
+        },
+        axisLabel: {
+            color: '#97b8d8',
+            fontSize: 14
+        },
+        type: 'category',
+        boundaryGap: false,
+        data: {{ leixin | tojson }}
+    }],
+    yAxis: [{
+        gridIndex: 0,
+        axisLabel: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            show: false,
+        },
+        splitLine: {
+            show: false
+        },
+        splitNumber: 1,
+        name: '滚石评分',
+        nameLocation: 'center',
+        nameTextStyle: {
+            color: '#97b8d8',
+            fontSize: 14
+        },
+        nameRotate: 360
+    }, {
+        gridIndex: 1,
+        axisLabel: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            show: false,
+        },
+        splitLine: {
+            show: false
+        },
+        splitNumber: 1,
+        name: '全球音乐电视台评分',
+        nameLocation: 'center',
+        nameTextStyle: {
+            color: '#97b8d8',
+            fontSize: 14
+        },
+        nameRotate: 360
+    }, {
+        gridIndex: 2,
+        axisLabel: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            show: false,
+        },
+        splitLine: {
+            show: false
+        },
+        splitNumber: 1,
+        name: '音乐达人评分',
+        nameLocation: 'center',
+        nameTextStyle: {
+            color: '#97b8d8',
+            fontSize: 14
+        },
+        nameRotate: 360
+    }, {
+        gridIndex: 3,
+        axisLabel: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            show: false,
+        },
+        splitLine: {
+            show: false
+        },
+        splitNumber: 1,
+
+        nameLocation: 'center',
+        nameTextStyle: {
+            color: '#97b8d8',
+            fontSize: 14
+        },
+        nameRotate: 360
+    }],
+    grid: [{
+        top: '10%',
+        left: '11%',
+        right: '4%',
+        bottom: '4%',
+        height: '20%'
+    }, {
+        top: '30%',
+        left: '11%',
+        right: '4%',
+        bottom: '4%',
+        height: '20%'
+    }, {
+        top: '50%',
+        left: '11%',
+        right: '4%',
+        bottom: '4%',
+        height: '20%'
+    }, {
+        top: '70%',
+        left: '11%',
+        right: '4%',
+        bottom: '4%',
+        height: '20%'
+    }],
+    series: [{
+        type: 'line',
+        data: {{ gpf | tojson }},
+        xAxisIndex: 0,
+        yAxisIndex: 0,
+        smooth: true,
+        lineStyle: {
+            color: '#92c690'
+        },
+        itemStyle: {
+            normal: {
+                color: '#92c690',
+                borderColor: '#92c690'
+            }
+        },
+        areaStyle: {
+            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                offset: 0,
+                color: '#92c690b3'
+            }, {
+                offset: 1,
+                color: '#92c69003'
+            }])
+        }
+    }, {
+        type: 'line',
+        data: {{ qpf | tojson }},
+        xAxisIndex: 1,
+        yAxisIndex: 1,
+        smooth: true,
+        lineStyle: {
+            color: '#219cab'
+        },
+        itemStyle: {
+            normal: {
+                color: '#219cab',
+                borderColor: '#219cab'
+            }
+        },
+        areaStyle: {
+            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                    offset: 0,
+                    color: '#219cabb3'
+                },
+                {
+                    offset: 1,
+                    color: '#219cab03'
+                }
+            ])
+        }
+    }, {
+        type: 'line',
+        data: {{ ypf | tojson }},
+        xAxisIndex: 2,
+        yAxisIndex: 2,
+        smooth: true,
+        lineStyle: {
+            color: '#6f68bf'
+        },
+        itemStyle: {
+            normal: {
+                color: '#6f68bf',
+                borderColor: '#6f68bf'
+            }
+        },
+        areaStyle: {
+            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                offset: 0,
+                color: '#6f68bfb3'
+            }, {
+                offset: 1,
+                color: '#6f68bf03'
+            }])
+        }
+    }]
+};
+
+if(option){
+myChart.setOption(option);
+}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>登录</title>
+    <!-- plugins:css -->
+     <link rel="stylesheet" href="static/css/login/materialdesignicons.min.css">
+    <link rel="stylesheet" href="static/css/login/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="static/css/login/style.css">
+      <link rel="shortcut icon" href="../static/image/bitbug_favicon%20(1).ico" />
+    <!-- End layout styles -->
+   
+  </head>
+  <body class="bodylogin">
+{#    <div class="container-scroller">#}
+{#      <div class="container-fluid page-body-wrapper full-page-wrapper">#}
+{#        <div class="row w-100 m-0">#}
+{#          <div class="content-wrapper full-page-wrapper d-flex align-items-center auth login-bg">#}
+{#            <div class="card col-lg-4 mx-auto">#}
+{#                <img src="/static/image/wgSj0Oalc972QdE.jpg" alt=""  style="width: 450px;  margin: 0; display: block;display: block; margin: 0;">#}
+{#              <div class="card-body px-5 py-5">#}
+{#                <h1 class="card-title text-left mb-3" style="text-align: center; margin: 0 auto; width: fit-content;">邮箱登录</h1>#}
+{#                <form  class="user" method="POST" action="/login">#}
+{#                    <div class="form-group">#}
+{#                    <label>邮箱</label>#}
+{#                    <input type="username" name="username" class="form-control p_input" autocomplete="off">#}
+{#                  </div>#}
+{#                   <div class="form-group">#}
+{#                    <label>密码</label>#}
+{#                    <input type="password" name="password" class="form-control p_input">#}
+{#                  </div>#}
+{#                  <div class="form-group d-flex align-items-center justify-content-between">#}
+{#                    <div class="form-check">#}
+{#                      <label class="form-check-label">#}
+{#                        <input type="checkbox" class="form-check-input"> 保存密码 </label>#}
+{#                    </div>#}
+{#                  </div>#}
+{#                  <div class="text-center">#}
+{#                    <button type="submit" class="btn btn-primary btn-block enter-btn" href="index.html">登录</button>#}
+{#                  </div>#}
+{##}
+{#                  <p class="sign-up">你是不是还没有账号?<a href="/register">  注册账号</a></p>#}
+{#                </form>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+{#          <!-- content-wrapper ends -->#}
+{#        </div>#}
+{#        <!-- row ends -->#}
+{#      </div>#}
+{#      <!-- page-body-wrapper ends -->#}
+{#    </div>#}
+{#    </div>#}
+{#_________________________#}
+<form  class="user" method="POST" action="/login">
+    <div class="login-container ">
+
+        <div class="left-container">
+
+            <div class="title"><span>登录</span></div>
+            <div class="input-container">
+
+                    <input type="username" name="username"  autocomplete="off" placeholder="邮箱">
+
+                    <input type="password" name="password"  placeholder="密码">
+
+
+            </div>
+            <div class="message-container">
+{#                <input type="checkbox" class="form-check-input"> &nbsp&nbsp&nbsp保存密码 </label>#}
+                <p class="sign-up">你是不是还没有账号?<a href="/register" style="color: #ca0a0a" >  注册账号</a></p>
+
+            </div>
+
+        </div>
+        <div class="right-container">
+            <div class="regist-container">
+                <span class="regist">注册</span>
+            </div>
+{#            <a type="submit"  href="index.html">#}
+                 <div class="action-container" type="submit" href="index.html">
+                     <button type="submit" class="" href="index.html" >
+                <span style="color: #f7f7fa">提交</span>
+                       </button>
+            </div>
+{#        </a>#}
+        </div>
+
+    </div>
+</form>
+
+
+    <script src="static/js/login/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="static/js/login/off-canvas.js"></script>
+    <script src="static/js/login/hoverable-collapse.js"></script>
+    <script src="static/js/login/misc.js"></script>
+    <script src="static/js/login/settings.js"></script>
+    <script src="static/js/login/todolist.js"></script>
+    <!-- endinject -->
+  </body>
+</html>

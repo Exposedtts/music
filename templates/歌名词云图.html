@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="referrer" content="no-referrer"/>
+    <title>左清清音乐</title>
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Rockfest - Music Festival Event, DJ Concert and Night Club Website Template" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <!-- CSS Files
+    ================================================== -->
+    <link id="bootstrap" href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link id="bootstrap-grid" href="static/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+    <link id="bootstrap-reboot" href="static/css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/animate.css" rel="stylesheet" type="text/css">
+    <link href="static/css/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="static/css/owl.theme.css" rel="stylesheet" type="text/css">
+    <link href="static/css/owl.transitions.css" rel="stylesheet" type="text/css">
+    <link href="static/css/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="static/css/jquery.countdown.css" rel="stylesheet" type="text/css">
+    <link id="mdb" href="static/css/mdb.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/style.css" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="static/css/scheme-01.css" rel="stylesheet" type="text/css">
+    <link href="static/css/coloring.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../static/image/bitbug_favicon%20(1).ico" />
+</head>
+
+<body class="dark-scheme">
+    <div id="wrapper">
+        <div id="preloader">
+            <div class="preloader1"></div>
+        </div>
+        <!-- header begin -->
+        <header class="transparent" style="position: relative; height: 80px;position: fixed">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col" >
+                                <div class="de-flex-col" style="position: absolute;top: 20px ;left: 40px;width: 300px;">
+                                    <!-- logo begin -->
+                                    <div id="logo" >
+                                        <a href="" >
+                                            <img alt="" src="static/picture/logo.png" style="float: left;">
+                                            <p style="color: red;float: left;line-height: 50px;margin-left: 15px;font-size: 26px">左清清音乐分析系统</p>
+                                        </a>
+                                    </div>
+                                    <!-- logo close -->
+                                </div>
+                                <div class="de-flex-col">
+                                </div>
+                            </div>
+                            <div class="de-flex-col header-col-mid" style="position: absolute;left: 400px">
+                                <!-- mainmenu begin -->
+                                <ul id="mainmenu">
+                                    <li><a href="/home" >首页</a></li>
+                                    <li><a href="#" >歌单类型分析</a>
+                                        <ul>
+                                            <li><a href="/gendnxt">歌单类型图</a></li>
+                                            <li><a href="/gedanlxphb">歌单播放量排行榜</a></li>
+                                            <li><a href="/gedanscphb">歌单收藏排行榜</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">英文歌专辑分析</a>
+                                        <ul>
+                                            <li><a href="/genianfbywzjsl">各年发布英文专辑数量</a></li>
+                                            <li><a href="/zhuanjixlnxpfb">专辑销量类型评分榜</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" style="color: #fd0202">歌名歌手分析</a>
+                                        <ul>
+                                            <li><a href="/gemingcyt">歌名词云图</a></li>
+                                            <li><a href="/geshouciyt">歌手前三十发歌量</a></li>
+                                        </ul>
+                                    </li>
+                                     <li><a href="/gequshichang">歌曲时长分析</a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="de-flex-col" style="position: absolute;left: 1200px;top: 28px">
+                                <div class="menu_side_area">
+                                    <a href="#section-tickets" class="btn-main"  style="border-radius: 10px;">
+                                    <i class="fa fa-sign-in"></i><span>{{ username }}</span></a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+            <section id="section-date" style="background-color: #311818">
+                <div class="container">
+                    <div class="row g-custom-x align-items-center">
+                        <div class="col-lg-12">
+                            <div class="text-center" style="background-color: #a48d8d;">
+                                <h2 class="wow fadeInUp threeD" data-wow-delay="0s">歌名热词气泡图</h2>
+                                <div class="zhanshi" style="height: 600px;background-color: #FFFFFF" id="chart-panel" ></div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/wow.min.js"></script>
+    <script src="static/js/jquery.isotope.min.js"></script>
+    <script src="static/js/easing.js"></script>
+    <script src="static/js/owl.carousel.js"></script>
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    <script src="static/js/enquire.min.js"></script>
+    <script src="static/js/jquery.plugin.js"></script>
+    <script src="static/js/jquery.countTo.js"></script>
+    <script src="static/js/jquery.countdown.js"></script>
+    <script src="static/js/jquery.lazy.min.js"></script>
+    <script src="static/js/jquery.lazy.plugins.min.js"></script>
+    <script src="static/js/mdb.min.js"></script>
+    <script src="static/js/jquery.countdown.js"></script>
+    <script src="static/js/countdown-custom.js"></script>
+    <script src="static/js/cookit.js"></script>
+    <script src="static/js/designesia.js"></script>
+    <script src="static/js/echarts/echarts.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('chart-panel'));
+ let resultData = {
+  status: 'success',
+  data: [{'value': 514, 'name': '翻自'}, {"value": 777, "name": "勇气"}, {"value": 1120, "name": "信仰"}, {"value": 432, "name": "幸福"}, {"value": 999, "name": "永远"}, {"value": 105, "name": "等待"}, {"value": 666, "name": "故事"}, {"value": 369, "name": "未来"}, {"value": 888, "name": "梦想家"}, {"value": 1180, "name": "憧憬"},{"value": 890, "name": "离别"},{"value": 1080, "name": "思念"},{"value": 543, "name": "快乐"},{"value": 256, "name": "自由"},{"value": 345, "name": "遇见"},{"value": 987, "name": "心动"},{"value": 115, "name": "旋律"},{"value": 678, "name": "浪漫"},{"value": 321, "name": "拥抱"},{"value": 234, "name": "梦想"},{"value": 789, "name": "青春"},{"value": 1110, "name": "回忆"},{"value": 456, "name": "温柔"},{"value": 876, "name": "想念"}, {"value": 1020, "name": "爱情"},{"value": 567, "name": "时光"}, {'value': 107, 'name': 'Remix'}, {'value': 104, 'name': '主题曲'}, {'value': 98, 'name': 'remix'}, {'value':800, 'name': 'Live'}, {'value': 92, 'name': 'You'}, {'value': 880, 'name': '电影'}, {'value': 76, 'name': '原唱'}, {'value': 75, 'name': '电视剧'}, {'value': 71, 'name': 'DJ'}, {'value': 69, 'name': '2020'}, {'value': 64, 'name': 'The'}, {'value': 64, 'name': '重唱'}, {'value': 61, 'name': '插曲'}, {'value': 57, 'name': 'Mix'}, {'value': 54, 'name': 'the'}, {'value': 52, 'name': '我们'}, {'value': 46, 'name': 'Beat'}, {'value': 45, 'name': 'Original'}, {'value': 45, 'name': '世界'}, {'value': 43, 'name': '夏天'}, {'value': 40, 'name': '林俊杰'}, {'value': 39, 'name': 'feat'}, {'value': 38, 'name': 'Type'}, {'value': 35, 'name': '动画'}, {'value': 35, 'name': '抖音'}, {'value': 35, 'name': '人间'}, {'value': 34, 'name': 'FREE'}, {'value': 33, 'name': '片尾曲'}, {'value': 32, 'name': 'Love'}, {'value': 32, 'name': 'Edit'}, {'value': 31, 'name': '喜欢'}, {'value': 29, 'name': '没有'}, {'value': 28, 'name': '那个'}, {'value': 28, 'name': '片段'}, {'value': 26, 'name': '一起'}, {'value': 26, 'name': '存在'}, {'value': 25, 'name': '完整版'}, {'value': 24, 'name': 'With'}, {'value': 23, 'name': '失联'}, {'value': 23, 'name': '不是'}, {'value': 23, 'name': '群星'}, {'value': 23, 'name': '先生'}, {'value': 22, 'name': 'Version'}, {'value': 22, 'name': '青春'}, {'value': 22, 'name': '一个'}, {'value': 21, 'name': '冒险'}, {'value': 21, 'name': '松紧'}, {'value': 21, 'name': '李宗锦'}, {'value': 20, 'name': 'Your'}, {'value': 20, 'name': 'Don'}, {'value': 20, 'name': '这个'}, {'value': 19, 'name': '想见'}, {'value': 19, 'name': 'with'}, {'value': 19, 'name': '那年'}, {'value': 19, 'name': '塌陷'}, {'value': 19, 'name': '可爱'}, {'value': 19, 'name': '抖音版'}, {'value': 18, 'name': 'Radio'}, {'value': 18, 'name': 'All'}, {'value': 17, 'name': 'Piano'}, {'value': 17, 'name': '那些'}, {'value': 17, 'name': 'prod'}, {'value': 17, 'name': '男声版'}, {'value': 17, 'name': 'Ver'}, {'value': 16, 'name': 'Right'}, {'value': 16, 'name': 'Prod'}, {'value': 16, 'name': '如果'}, {'value': 16, 'name': '如此'}, {'value': 15, 'name': 'Dance'}, {'value': 15, 'name': '关于'}, {'value': 15, 'name': '宇宙'}, {'value': 15, 'name': '海边'}, {'value': 15, 'name': '拥抱'}, {'value': 15, 'name': '汪苏'}, {'value': 15, 'name': '不到'}, {'value': 14, 'name': '声音'}, {'value': 14, 'name': '永不'}, {'value': 14, 'name': '一样'}, {'value': 14, 'name': '就是'}, {'value': 14, 'name': 'Extended'}, {'value': 14, 'name': 'you'}, {'value': 14, 'name': '恋爱'}, {'value': 14, 'name': '海底'}, {'value': 14, 'name': '不爱'}, {'value': 14, 'name': '隔岸'}, {'value': 14, 'name': '爱情'}, {'value': 14, 'name': '夏恋'}, {'value': 13, 'name': '滴答'}, {'value': 13, 'name': '温柔'}, {'value': 13, 'name': '星河'}, {'value': 13, 'name': '奇妙'}, {'value': 13, 'name': '山海'}, {'value': 13, 'name': '林宥'}, {'value': 13, 'name': '秋天'}, {'value': 13, 'name': 'Cover'}, {'value': 13, 'name': '弹唱'}, {'value': 13, 'name': '小熊维尼'}, {'value': 13, 'name': '特辑'}, {'value': 13, 'name': '无人'}, {'value': 12, 'name': 'From'}, {'value': 12, 'name': '夜里'}, {'value': 12, 'name': '银河'}, {'value': 12, 'name': 'What'}, {'value': 12, 'name': '还是'}, {'value': 12, 'name': '再见'}, {'value': 12, 'name': '情歌'}, {'value': 12, 'name': '外来'}, {'value': 12, 'name': 'VIP'}, {'value': 12, 'name': '吉他'}, {'value': 12, 'name': '片头曲'}, {'value': 12, 'name': '寻爱记'}, {'value': 12, 'name': '好不好'}, {'value': 12, 'name': '琉璃'}, {'value': 11, 'name': 'We'}, {'value': 11, 'name': '音乐'}, {'value': 11, 'name': 'for'}, {'value': 11, 'name': '少年'}, {'value': 11, 'name': '中国'}, {'value': 11, 'name': '姑娘'}, {'value': 11, 'name': '一吻'}, {'value': 11, 'name': '回到'}, {'value': 11, 'name': '万万'}, {'value': 11, 'name': '回来'}, {'value': 11, 'name': '与我无关'}, {'value': 11, 'name': '雨爱'}, {'value': 11, 'name': 'Au'}, {'value': 11, 'name': 'ED'}, {'value': 10, 'name': 'Blue'}, {'value': 10, 'name': '一天'}, {'value': 10, 'name': 'La'}, {'value': 10, 'name': '快乐'}, {'value': 10, 'name': 'Are'}, {'value': 10, 'name': 'Summer'}, {'value': 10, 'name': '自己'}, {'value': 10, 'name': '美好'}, {'value': 10, 'name': '重启'}, {'value': 10, 'name': '收敛'}, {'value': 10, 'name': '一直'}, {'value': 10, 'name': '什么'}, {'value': 10, 'name': '最后'}, {'value': 10, 'name': '天荒'}, {'value': 10, 'name': '张信哲'}, {'value': 10, 'name': 'Sad'}, {'value': 10, 'name': '清风徐来'}, {'value': 10, 'name': '我爱你'}, {'value': 10, 'name': '万有引力'}, {'value': 10, 'name': '恶之花'}, {'value': 10, 'name': 'JOJO'}, {'value': 10, 'name': 'Busking'}, {'value': 10, 'name': 'NAVIGATOR'}, {'value': 9, 'name': 'Theme'}, {'value': 9, 'name': '知道'}, {'value': 9, 'name': '心动'}, {'value': 9, 'name': 'Want'}, {'value': 9, 'name': 'Back'}, {'value': 9, 'name': 'Last'}, {'value': 9, 'name': '孤独'}, {'value': 9, 'name': '治愈'}, {'value': 9, 'name': 'Heart'}, {'value': 9, 'name': '星星'}, {'value': 9, 'name': '伴奏'}, {'value': 9, 'name': '井胧'}, {'value': 9, 'name': '熟悉'}, {'value': 9, 'name': '陌生'}, {'value': 9, 'name': 'dj'}, {'value': 9, 'name': '分寸'}, {'value': 9, 'name': '这样'}, {'value': 9, 'name': '圈住'}, {'value': 9, 'name': '自由'}, {'value': 9, 'name': '信仰'}, {'value': 9, 'name': '下雨天'}, {'value': 9, 'name': '明天'}, {'value': 9, 'name': '朋友'}, {'value': 9, 'name': '江南'}, {'value': 9, 'name': 'demo'}, {'value': 9, 'name': '守候'}, {'value': 9, 'name': '一支'}, {'value': 9, 'name': '榴莲'}, {'value': 9, 'name': '网愈云'}, {'value': 9, 'name': '悟空'}, {'value': 8, 'name': 'Up'}, {'value': 8, 'name': '时光'}, {'value': 8, 'name': '想念'}, {'value': 8, 'name': '幸福'}, {'value': 8, 'name': 'So'}, {'value': 8, 'name': 'Make'}, {'value': 8, 'name': 'Funk'}, {'value': 8, 'name': 'Know'}, {'value': 8, 'name': '高考'}, {'value': 8, 'name': 'And'}, {'value': 8, 'name': 'Time'}, {'value': 8, 'name': 'Let'}, {'value': 8, 'name': 'This'}, {'value': 8, 'name': '名字'}, {'value': 8, 'name': '初夏'}, {'value': 8, 'name': '的话'}, {'value': 8, 'name': '所念'}, {'value': 8, 'name': 'Star'},
+      ],
+  msg: 'exercitation in',
+};
+
+//  颜色渐变函数 前四个参数分别表示四个位置依次为左、下、右、上
+let colorList = [
+  new echarts.graphic.LinearGradient(0, 0, 1, 1, [
+    {
+      offset: 0,
+      color: 'rgba(59, 181, 182, 1)',
+    },
+    {
+      offset: 1,
+      color: 'rgba(66, 227, 151, 0.2)',
+    },
+  ]),
+  new echarts.graphic.LinearGradient(1, 0, 0, 1, [
+    {
+      offset: 0,
+      color: 'rgba(254, 220, 69, 1)',
+    },
+    {
+      offset: 1,
+      color: 'rgba(251, 112, 153, 0.2)',
+    },
+  ]),
+  new echarts.graphic.LinearGradient(0, 1, 1, 0, [
+    {
+      offset: 0,
+      color: 'rgba(0, 138, 255, 1)',
+    },
+    {
+      offset: 1,
+      color: 'rgba(0, 216, 255, 0.2)',
+    },
+  ]),
+  new echarts.graphic.LinearGradient(0, 0, 1, 1, [
+    {
+      offset: 0,
+      color: 'rgba(246, 191, 159, 1)',
+    },
+    {
+      offset: 1,
+      color: 'rgba(219, 138, 222, 0.2)',
+    },
+  ]),
+  new echarts.graphic.LinearGradient(1, 0, 0, 1, [
+    {
+      offset: 0,
+      color: 'rgba(247, 138, 158, 1)',
+    },
+    {
+      offset: 0.5,
+      color: 'rgba(245, 111, 135, 0.5)',
+    },
+    {
+      offset: 1,
+      color: 'rgba(254, 152, 139, 0.2)',
+    },
+  ]),
+  new echarts.graphic.LinearGradient(0, 1, 1, 0, [
+    {
+      offset: 0,
+      color: 'rgba(144, 125, 228, 1)',
+    },
+    {
+      offset: 1,
+      color: 'rgba(33, 223, 209, 0.2)',
+    },
+  ]),
+  new echarts.graphic.LinearGradient(0, 0, 1, 1, [
+    {
+      offset: 0,
+      color: 'rgba(32, 156, 255, 1)',
+    },
+    {
+      offset: 1,
+      color: 'rgba(104, 224, 207, 0.2)',
+    },
+  ]),
+  new echarts.graphic.LinearGradient(1, 0, 0, 1, [
+    {
+      offset: 0,
+      color: 'rgba(94, 209, 225, 1)',
+    },
+    {
+      offset: 0.5,
+      color: 'rgba(191, 194, 254, 0.5)',
+    },
+    {
+      offset: 1,
+      color: 'rgba(232, 189, 219, 0.2)',
+    },
+  ]),
+  new echarts.graphic.LinearGradient(0, 1, 1, 0, [
+    {
+      offset: 0,
+      color: 'rgba(238, 114, 125, 1)',
+    },
+    {
+      offset: 1,
+      color: 'rgba(253, 162, 63, 0.2)',
+    },
+  ]),
+];
+let colorListLen = colorList.length;
+
+// 生成随机坐标的不重叠圆
+function drawCircles(maxLength, radius, max_x, max_y) {
+  let circles = [];
+  let anti_crash_count = 0;
+  while (circles.length < maxLength) {
+    let circle = {
+      x: getRandomNumber(radius, max_x - radius),
+      y: getRandomNumber(radius, max_y - radius),
+      radius,
+    };
+
+    let isOverlapping = false;
+
+    for (let j = 0; j < circles.length; j++) {
+      let previous_circle = circles[j];
+      let distance = Math.hypot(circle.x - previous_circle.x, circle.y - previous_circle.y);
+
+      if (distance < circle.radius + previous_circle.radius) {
+        isOverlapping = true;
+        break;
+      }
+    }
+
+    if (!isOverlapping) {
+      circles.push(circle);
+    }
+    anti_crash_count++;
+    if (anti_crash_count > 10000) {
+      break;
+    }
+  }
+  return circles;
+}
+
+// 生成随机数坐标
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+// 数据数组
+let countList = resultData.data;
+var showData = [];
+var sum = 0,
+  max = 0;
+countList.forEach((e, i) => {
+  e.id = i;
+  e.label = {
+    normal: {
+      show: true,
+      color: '#fff',
+    },
+  };
+  e.itemStyle = {
+    normal: {
+      color: colorList[Math.floor(Math.random() * colorListLen)],
+      shadowBlur: 16,
+      shadowOffsetY: 16,
+      shadowColor: 'rgba(0,0,0,0.1)',
+    },
+  };
+  sum += e.value;
+  if (e.value >= max) max = e.value;
+});
+// 放大规则
+var number = Math.round(max * 0.5);
+let graphCanvas = document.getElementById('chart-panel').getBoundingClientRect();
+let randomCircleArr = drawCircles(
+  countList.length,
+  ((max + number) / max) * 40,
+  graphCanvas.width,
+  graphCanvas.height
+);
+countList.forEach((e, i) => {
+  if (randomCircleArr[i]) {
+    e.x = randomCircleArr[i].x;
+    e.y = randomCircleArr[i].y;
+    e.symbolSize = ((e.value + number) / max) * 70;
+    e.label.normal.fontSize = ((e.value + number) / max) * 15;
+  } else {
+    e.symbolSize = 0;
+    e.x = 0;
+    e.y = 0;
+  }
+});
+option = {
+  title: {},
+  tooltip: {
+    trigger: 'item',
+    formatter: function (params) {
+      if (params['data']['name'] !== '') {
+        return '<b>' + params['data']['name'] + '</b>：<b>' + params['data']['value'] + ' </b>';
+      }
+    },
+  },
+  series: [
+    {
+      name: '词条分布',
+      type: 'graph',
+      layout: 'none',
+      label: {
+        show: true,
+        normal: {
+          color: '#fff',
+        },
+      },
+      data: countList,
+    },
+  ],
+};
+
+if(option){
+myChart.setOption(option);
+}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="referrer" content="no-referrer"/>
+    <title>左清清音乐</title>
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Rockfest - Music Festival Event, DJ Concert and Night Club Website Template" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <!-- CSS Files
+    ================================================== -->
+    <link id="bootstrap" href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link id="bootstrap-grid" href="static/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+    <link id="bootstrap-reboot" href="static/css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/animate.css" rel="stylesheet" type="text/css">
+    <link href="static/css/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="static/css/owl.theme.css" rel="stylesheet" type="text/css">
+    <link href="static/css/owl.transitions.css" rel="stylesheet" type="text/css">
+    <link href="static/css/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="static/css/jquery.countdown.css" rel="stylesheet" type="text/css">
+    <link id="mdb" href="static/css/mdb.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/style.css" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="static/css/scheme-01.css" rel="stylesheet" type="text/css">
+    <link href="static/css/coloring.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../static/image/bitbug_favicon%20(1).ico" />
+</head>
+
+<body class="dark-scheme">
+    <div id="wrapper">
+        <div id="preloader">
+            <div class="preloader1"></div>
+        </div>
+        <!-- header begin -->
+{#
+
+ #}
+        <header class="transparent" style="position: relative; height: 80px;position: fixed">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col" >
+                                <div class="de-flex-col" style="position: absolute;top: 20px ;left: 40px;width: 300px;">
+                                    <!-- logo begin -->
+                                    <div id="logo" >
+                                        <a href="" >
+                                            <img alt="" src="static/picture/logo.png" style="float: left;">
+                                            <p style="color: red;float: left;line-height: 50px;margin-left: 15px;font-size: 26px">左清清音乐分析系统</p>
+                                        </a>
+                                    </div>
+                                    <!-- logo close -->
+                                </div>
+                                <div class="de-flex-col">
+                                </div>
+                            </div>
+                            <div class="de-flex-col header-col-mid" style="position: absolute;left: 400px">
+                                <!-- mainmenu begin -->
+                                <ul id="mainmenu">
+                                    <li><a href="/home" >首页</a></li>
+                                    <li><a href="#" >歌单类型分析</a>
+                                        <ul>
+                                            <li><a href="/gendnxt">歌单类型图</a></li>
+                                            <li><a href="/gedanlxphb">歌单播放量排行榜</a></li>
+                                            <li><a href="/gedanscphb">歌单收藏排行榜</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" >英文歌专辑分析</a>
+                                        <ul>
+                                            <li><a href="/genianfbywzjsl">各年发布英文专辑数量</a></li>
+                                            <li><a href="/zhuanjixlnxpfb">专辑销量类型评分榜</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"style="color: #fd0202">歌名歌手分析</a>
+                                         <ul>
+                                            <li><a href="/gemingcyt">歌名词云图</a></li>
+                                            <li><a href="/geshouciyt">歌手前三十发歌量</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/gequshichang">歌曲时长分析</a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="de-flex-col" style="position: absolute;left: 1200px;top: 28px">
+                                <div class="menu_side_area">
+                                    <a href="#section-tickets" class="btn-main"  style="border-radius: 10px;><i class="fa fa-sign-in"></i><span>{{ username }}</span></a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+            <section id="section-date" style="background-color: #311818">
+                <div class="container">
+                    <div class="row g-custom-x align-items-center">
+                        <div class="col-lg-12">
+                            <div class="text-center" style="background-color: #a48d8d">
+                                <h2 class="wow fadeInUp threeD" data-wow-delay="0s">歌单存放歌手前三十发歌数量</h2>
+                                <div class="zhanshi" style="height: 800px;background-color: #FFFFFF" id="chart-panel" ></div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/wow.min.js"></script>
+    <script src="static/js/jquery.isotope.min.js"></script>
+    <script src="static/js/easing.js"></script>
+    <script src="static/js/owl.carousel.js"></script>
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    <script src="static/js/enquire.min.js"></script>
+    <script src="static/js/jquery.plugin.js"></script>
+    <script src="static/js/jquery.countTo.js"></script>
+    <script src="static/js/jquery.countdown.js"></script>
+    <script src="static/js/jquery.lazy.min.js"></script>
+    <script src="static/js/jquery.lazy.plugins.min.js"></script>
+    <script src="static/js/mdb.min.js"></script>
+    <script src="static/js/jquery.countdown.js"></script>
+    <script src="static/js/countdown-custom.js"></script>
+    <script src="static/js/cookit.js"></script>
+    <script src="static/js/designesia.js"></script>
+    <script src="static/js/echarts/echarts.js"></script>
+    <script src="/static/js/echarts/echarts-wordcloud.min.js"></script>
+    <!-- COOKIES PLUGIN  -->
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('chart-panel'));
+ option = {
+  legend: {
+    top: 'bottom'
+  },
+  toolbox: {
+    show: true,
+    feature: {
+      mark: { show: true },
+      dataView: { show: true, readOnly: false },
+      restore: { show: true },
+      saveAsImage: { show: true }
+    }
+  },
+  series: [
+    {
+      name: '歌单存放歌手前三十发歌数量',
+      type: 'pie',
+      radius: [50, 250],
+      center: ['50%', '50%'],
+      roseType: 'area',
+      itemStyle: {
+        borderRadius: 8
+      },
+      data:[{'value': 61, 'name': '方续Cuz'}, {'value': 39, 'name': '是你的垚'}, {'value': 35, 'name': '薛之谦'}, {'value': 30, 'name': '陈奕迅'}, {'value': 30, 'name': 'Mittsies'}, {'value': 30, 'name': 'TFBOYS'}, {'value': 29, 'name': '李荣浩'}, {'value': 24, 'name': '田馥甄'}, {'value': 23, 'name': '任然'}, {'value': 22, 'name': '周深'}, {'value': 21, 'name': '抖音热歌DJ'}, {'value': 21, 'name': '无名之爱'}, {'value': 20, 'name': '五月天'}, {'value': 17, 'name': '长夜看海'}, {'value': 17, 'name': '隔壁老樊'}, {'value': 16, 'name': '毛不易'}, {'value': 16, 'name': '沈以诚'}, {'value': 16, 'name': 'Pyb'}, {'value': 15, 'name': 'G.E.M.邓紫棋'}, {'value': 15, 'name': "Ha'O/瓜尔佳鑫"}, {'value': 15, 'name': '华晨宇'}, {'value': 15, 'name': '颜人中'}, {'value': 15, 'name': '林俊杰'}, {'value': 15, 'name': '焦迈奇'}, {'value': 14, 'name': '周兴哲'}, {'value': 14, 'name': '王贰浪'}, {'value': 14, 'name': '姚六一'}, {'value': 14, 'name': '高宇Slient'}, {'value': 14, 'name': '赵英俊'}, {'value': 14, 'name': '伍佰 & China Blue'}, {'value': 13, 'name': '傲七爷'}, {'value': 13, 'name': '山相曾'}]
+    }
+  ]
+};
+
+if(option){
+myChart.setOption(option);
+}
+    </script>
+
+</body>
+
+</html>

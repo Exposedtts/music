@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <!-- 声明文档使用UTF - 8字符编码，用于正确解析页面中的字符 -->
+    <meta charset="utf-8">
+    <!-- 设置文档与IE浏览器的兼容性模式，确保以最新的渲染模式显示 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 用于响应式设计，确保页面在不同设备宽度下正确显示，初始缩放比例为1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- 表示该页面的资源请求不携带Referer信息，增强隐私保护 -->
+    <meta name="referrer" content="no-referrer"/>
+    <title>左清清音乐</title>
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Rockfest - Music Festival Event, DJ Concert and Night Club Website Template" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <!-- 引入一系列CSS样式文件，用于设置页面的布局、动画、组件样式等 -->
+    <link id="bootstrap" href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link id="bootstrap-grid" href="static/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+    <link id="bootstrap-reboot" href="static/css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/animate.css" rel="stylesheet" type="text/css">
+    <link href="static/css/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="static/css/owl.theme.css" rel="stylesheet" type="text/css">
+    <link href="static/css/owl.transitions.css" rel="stylesheet" type="text/css">
+    <link href="static/css/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="static/css/jquery.countdown.css" rel="stylesheet" type="text/css">
+    <link id="mdb" href="static/css/mdb.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/style.css" rel="stylesheet" type="text/css">
+    <!-- 引入颜色主题相关的CSS文件，用于设置页面的色彩方案 -->
+    <link id="colors" href="static/css/scheme-01.css" rel="stylesheet" type="text/css">
+    <link href="static/css/coloring.css" rel="stylesheet" type="text/css">
+    <!-- 设置网站的图标，在浏览器标签页等位置显示 -->
+    <link rel="shortcut icon" href="../static/image/bitbug_favicon%20(1).ico" />
+</head>
+<body class="dark-scheme">
+    <div id="wrapper">
+        <!-- 页面预加载器，在页面资源加载时显示，通常是一个加载动画，提升用户体验 -->
+        <div id="preloader">
+            <div class="preloader1"></div>
+        </div>
+        <!-- 页面头部区域开始，设置为透明背景，相对定位，固定高度80px，固定在页面顶部 -->
+        <header class="transparent" style="position: relative; height: 80px;position: fixed">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col" >
+                                <!-- 绝对定位的一个子区域，用于放置网站logo相关内容 -->
+                                <div class="de-flex-col" style="position: absolute;top: 20px ;left: 40px;width: 300px;">
+                                    <!-- logo区域开始 -->
+                                    <div id="logo" >
+                                        <a href="" >
+                                            <!-- 显示网站logo图片，设置为左浮动 -->
+                                            <img alt="" src="static/picture/logo.png" style="float: left;">
+                                            <!-- 显示网站名称，红色字体，左浮动，设置行高、左间距和字体大小 -->
+                                            <p style="color: red;float: left;line-height: 50px;margin-left: 15px;font-size: 26px">左清清音乐分析系统</p>
+                                        </a>
+                                    </div>
+                                    <!-- logo区域结束 -->
+                                </div>
+                                <div class="de-flex-col">
+                                </div>
+                            </div>
+                            <!-- 头部中间导航栏区域，绝对定位 -->
+                            <div class="de-flex-col header-col-mid" style="position: absolute;left: 400px">
+                                <!-- 主菜单开始 -->
+                                <ul id="mainmenu">
+                                    <li><a href="/home" >首页</a></li>
+                                    <li><a href="#" style="color: #fd0202">歌单类型分析</a>
+                                        <!-- 下拉子菜单开始 -->
+                                        <ul>
+                                            <li><a href="/gendnxt">歌单类型图</a></li>
+                                            <li><a href="/gedanlxphb">歌单播放量排行榜</a></li>
+                                            <li><a href="/gedanscphb">歌单收藏排行榜</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">英文歌专辑分析</a>
+                                        <ul>
+                                            <li><a href="/genianfbywzjsl">各年发布英文专辑数量</a></li>
+                                            <li><a href="/zhuanjixlnxpfb">专辑销量类型评分榜</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">歌名歌手分析</a>
+                                        <ul>
+                                            <li><a href="/gemingcyt">歌名词云图</a></li>
+                                            <li><a href="/geshouciyt">歌手前三十发歌量</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/gequshichang">歌曲时长分析</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 头部右侧区域，绝对定位，用于放置登录按钮等内容 -->
+                            <div class="de-flex-col" style="position: absolute;left: 1200px;top: 28px">
+                                <div class="menu_side_area">
+                                    <!-- 登录按钮，设置按钮样式，链接到#section-tickets，显示用户名 -->
+                                    <!-- Bug 修复：添加缺失的引号 -->
+                                    <a href="#section-tickets" class="btn-main"  style="border-radius: 10px;"><i class="fa fa-sign-in"></i><span>{{ username }}</span></a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 页面头部区域结束 -->
+        <!-- 页面主要内容区域开始 -->
+        <div class="no-bottom no-top" id="content">
+            <!-- 一个section区域，设置背景颜色，用于展示歌单收藏排行前十相关内容 -->
+            <section id="section-date" style="background-color: #311818">
+                <div class="container">
+                    <div class="row g-custom-x align-items-center">
+                        <div class="col-lg-12">
+                            <div class="text-center" style="background-color: #a48d8d">
+                                <!-- 显示标题，使用动画效果，延迟0s -->
+                                <h2 class="wow fadeInUp threeD" data-wow-delay="0s">歌单收藏排行前十</h2>
+                                <!-- 预留一个div区域，用于渲染Echarts图表，设置高度和背景颜色 -->
+                                <div class="zhanshi" style="height: 600px;background-color: #FFFFFF" id="chart-panel" ></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- 引入一系列JavaScript文件，用于实现页面的交互、动画、组件功能等 -->
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/wow.min.js"></script>
+    <script src="static/js/jquery.isotope.min.js"></script>
+    <script src="static/js/easing.js"></script>
+    <script src="static/js/owl.carousel.js"></script>
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    <script src="static/js/enquire.min.js"></script>
+    <script src="static/js/jquery.plugin.js"></script>
+    <script src="static/js/jquery.countTo.js"></script>
+    <script src="static/js/jquery.countdown.js"></script>
+    <script src="static/js/jquery.lazy.min.js"></script>
+    <script src="static/js/jquery.lazy.plugins.min.js"></script>
+    <script src="static/js/mdb.min.js"></script>
+    <script src="static/js/jquery.countdown.js"></script>
+    <script src="static/js/countdown-custom.js"></script>
+    <script src="static/js/cookit.js"></script>
+    <script src="static/js/designesia.js"></script>
+    <!-- 引入Echarts图表库，用于绘制可视化图表 -->
+    <script src="static/js/echarts/echarts.js"></script>
+    <!-- COOKIES PLUGIN  -->
+    <script type="text/javascript">
+        // 基于页面中id为chart-panel的dom元素，初始化Echarts实例
+        var myChart = echarts.init(document.getElementById('chart-panel'));
+        // 将Python变量gedanshouc转换为JSON格式并赋值给data变量
+        let data = {{ gedanshouc | tojson }}
+        // 从data中提取value并排序，获取最大值
+        var max = data.map(item => (item.value)).sort(function(a, b) {
+            return b - a;
+        })[0];
+        // 从data中提取value组成数组
+        var valueList = data.map(item => item.value)
+        // 从data中提取name组成数组
+        var nameList = data.map(item => item.name)
+        // 定义图表中使用的颜色数组
+        var color = [
+            '#e5088b', "#2b912d", "#9d6329", "#ca16e7", "#bb7b5b",'#00C7E6', "#3b55ff", "#6e6eff", "#64acff", "#bbbbbb"
+        ];
+        // 定义Echarts图表的配置项对象
+        var option = {
+            // 设置图表的背景颜色为黑色
+            backgroundColor: "#000",
+            grid: {
+                // 保证坐标轴刻度标签不会被截断
+                containLabel: true
+            },
+            xAxis: {
+                // 设置x轴类型为数值轴
+                type: "value",
+                // 不显示x轴
+                show: false
+            },
+            yAxis: [
+                {
+                    // 设置y轴类型为类别轴
+                    type: "category",
+                    // 反转y轴顺序
+                    inverse: true,
+                    // 设置y轴数据为歌单名称数组
+                    data: nameList,
+                    axisLabel: {
+                        // 设置轴标签字体大小
+                        fontSize: '16px',
+                        // 设置轴标签颜色
+                        color: "#fff",
+                        // 轴标签右对齐
+                        align: "right"
+                    }
+                },
+                {
+                    // 设置y轴类型为类别轴
+                    type: "category",
+                    // 反转y轴顺序
+                    inverse: true,
+                    // 设置y轴数据为歌单收藏数量数组
+                    data: valueList,
+                    axisLabel: {
+                        // 设置轴标签字体大小
+                        fontSize: '16px',
+                        // 设置轴标签颜色
+                        color: "#fff",
+                        // 轴标签左对齐
+                        align: "left"
+                    }
+                }
+            ],
+            series: [{
+                zlevel: 1,
+                name: "threatdata",
+                // 设置图表系列类型为柱状图
+                type: "bar",
+                // 设置柱状图宽度占比
+                barWidth: "35%",
+                // 设置动画时长
+                animationDuration: 1500,
+                // 设置柱状图数据为歌单收藏数量数组
+                data: valueList,
+                itemStyle: {
+                    normal: {
+                        // 设置柱状图边框圆角
+                        barBorderRadius: 20,
+                        // 根据索引设置柱状图颜色
+                        color: function(param) {
+                            return color[param.dataIndex]
+                        }
+                    }
+                }
+            },
+            {
+                name: "threatdatabg",
+                type: "bar",
+                barWidth: "15%",
+                // 设置柱子之间的间隔为-100%，即柱子重叠
+                barGap: "-100%",
+                // 设置数据为固定的最大值数组
+                data: [max, max, max, max, max],
+                itemStyle: {
+                    normal: {
+                        color: "#2c2c37",
+                        barBorderRadius: 30
+                    }
+                }
+            }]
+        };
+        // 如果配置项存在，则设置Echarts图表的配置项
+        if (option) {
+            myChart.setOption(option);
+        }
+    </script>
+</body>
+</html>
